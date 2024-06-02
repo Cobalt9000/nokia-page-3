@@ -13,7 +13,7 @@
           <FontAwesomeIcon icon={faSearch} className="icon" /> Quick Search
         </div>
         <button
-        onclick="window.location.href='https://nokia2.vercel.app/'"
+        onclick="window.location.href='https://nokia-page-2.vercel.app/'"
         style="background-color: navy; color: white; padding: 5px 10px; border: none; border-radius: 4px; display: flex; align-items: center; cursor: pointer;"
         >
         <i class="fas fa-map" style="margin-right: 5px;"></i>
