@@ -1,0 +1,229 @@
+.taskbar {
+  background-color: navy; 
+  color: white; 
+  display: flex;
+  justify-content: space-between; /* Align items to the start and end of the taskbar */
+  align-items: center; 
+  padding: 10px; 
+  border-bottom: 2px solid white; 
+}
+
+.taskbar-items {
+  display: flex;
+  align-items: center; /* Center items vertically within taskbar-items */
+}
+
+.center-items {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+}
+
+.taskbar-item {
+  padding: 5px 10px; /* Add padding to each taskbar item */
+  margin-right: 10px; /* Add margin between taskbar items */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+/* Style for right-aligned items */
+.right-items {
+  display: flex;
+}
+
+/* Add margin between icon and text */
+.taskbar-item .icon {
+  margin-right: 5px;
+}
+
+
+
+
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: navy;
+  color: white;
+  padding: 10px;
+  margin-top: 2px; /* Adjust spacing from the taskbar */
+  border-bottom: 2px solid white; 
+}
+
+.menu-left, .menu-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px; /* Space between icon and text */
+  color: white;
+}
+
+/* Optional: Add some margin around the text for better separation */
+.menu-left span, .menu-right span {
+  margin: 5px; /* Adjust margin as needed */
+}
+
+
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set height of the app to fill the viewport */
+}
+
+.content {
+  display: flex;
+  flex: 1; /* Grow to fill the remaining space */
+}
+
+.left-pane, .right-pane, .middle-pane {
+  flex: 1; /* Each pane takes equal space by default */
+  border: 1px solid navy; /* Add border with white color */
+}
+
+.middle-pane {
+  flex: 3; /* Middle pane takes three times the space of left and right panes */
+}
+
+/* Style the panes as needed */
+.left-pane {
+  background-color: white; /* Example background color */
+}
+
+.middle-pane {
+  background-color: #e0e0e0; /* Example background color */
+}
+.middle-pane.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* Ensure it appears above other elements */
+}
+
+.right-pane {
+  background-color: #d0d0d0; /* Example background color */
+}
+
+.content {
+  display: flex;
+  height: 100%; /* Take up all available vertical space in the app container */
+}
+
+.left-pane, .right-pane {
+  flex: 1; /* Initially give left and right panes equal size */
+  height: 100%;
+  /* You can adjust padding and other styles as needed */
+}
+
+.middle-pane {
+  flex: 5; /* Give the middle pane more space */
+  transition: width 0.3s ease; /* Smooth transition for any size change */
+  overflow: auto; /* Handle overflowing content */
+}
+
+.full-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.middle-pane.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* High z-index to ensure it is on top */
+}
+
+
+
+
+
+.contextbar {
+  color: navy; /* Navy text color */
+  padding: 10px;
+}
+
+.context-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative; /* Position relative for absolute positioning of dropdown */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.navy {
+  color: navy; /* Navy text color */
+}
+
+.dropdown-icon {
+  margin-left: auto; /* Push the dropdown icon to the right */
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg); /* Rotate dropdown icon when dropdown is open */
+}
+
+.dropdown-content {
+  position: absolute;
+  top: calc(100% + 5px); /* Position dropdown below the context item */
+  left: 0;
+  background-color: white; /* Dropdown background color */
+  color: navy; /* Dropdown text color */
+  min-width: 200px; /* Minimum width of the dropdown */
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow to the dropdown */
+  z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown-content span {
+  display: block;
+  padding: 5px 0;
+  cursor: pointer; /* Add cursor pointer to dropdown items */
+}
+
+.dropdown-content span:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+/* Add spacing between profile and settings */
+.profile-settings {
+  position: absolute;
+  bottom: 10px; /* Adjust bottom position as needed */
+}
+/* Styles for the content area */
+
+
+
+
+
+
+
+
+
+
+
+
+
