@@ -1,7 +1,7 @@
 <template>
   <div class="taskbar">
     <div class="taskbar-items">
-      <div className="bold-text">Digital Twin Site</div>
+      <i class="fa-solid fa-n" style="margin-right: 5px;"></i><div className="bold-text">Digital Twin Site</div>
       </div>
       <div className="taskbar-items center-items"> 
         <div className="taskbar-item">Dashboard</div>
@@ -10,7 +10,7 @@
       </div>
       <div className="taskbar-items right-items"> 
         <div className="taskbar-item">
-          <FontAwesomeIcon icon={faSearch} className="icon" /> Quick Search
+          <i class="fas fa-search" style="margin-right: 5px;"></i> Quick Search
         </div>
         <button
         onclick="window.location.href='https://nokia-page-2.vercel.app/'"
