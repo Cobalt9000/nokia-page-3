@@ -3,7 +3,7 @@
     <div class="menu-left">
       <span class="date">{{ today }}</span>
       <span class="site-info">
-        <font-awesome-icon :icon="['fas', 'building']" class="icon" /> Honny
+        <font-awesome-icon :icon="['fas', 'building']" class="icon" /> Site Name
       </span>
     </div>
     <div class="menu-right">
@@ -11,10 +11,10 @@
         <font-awesome-icon :icon="['fas', 'broadcast-tower']" class="icon" /> Tower Height
       </span>
       <span class="location">
-        <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="icon" /> Saudi Arabia
+        <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="icon" /> Location
       </span>
       <span class="site-type">
-        <font-awesome-icon :icon="['fas', 'broadcast-tower']" class="icon" /> Water Tower
+        <font-awesome-icon :icon="['fas', 'broadcast-tower']" class="icon" /> Site Type
       </span>
     </div>
   </div>
